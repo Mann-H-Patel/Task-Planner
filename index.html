@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-main">
+            <div class="logo">
+                To-Do App
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>Clear Tasks</li>
+                    <li>Contact us</li>
+                    <li>About Me</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-body">
+            <div class="task-entry">
+                    <input type="text" placeholder="Enter Your Task In 50 Words" class="input-task" maxlength="50">
+                    <button class="button" onclick="task_creater()">
+                        <span class="text">Submit</span>
+                        <svg class="arrow" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                            </path>
+                        </svg>
+                    </button>
+            </div>
+
+            <div class="task-display-main"></div>
+        </div>
+    </main>
+</body>
+
+<script src="App.js"></script>
+
+</html>

@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-main{
+    height: 80px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.logo{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;  
+    color: red;
+}
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: rgb(0, 128, 23);
+    font-size: 20px;
+}
+
+.links ul li:hover{
+  position: relative;
+  bottom: 4px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+.links{
+    padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-main{
+        height: 100px;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        font-size: 28px;
+    }
+
+    .links{
+        padding: 20px;
+    }
+
+    .links ul{
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+main{
+    margin-top: 2rem;
+}
+
+.main-body{
+    margin: 20px;
+    height: 100vh;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+
+.task-entry{
+    height: 60px;
+    border: 2px solid red;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(25, 162, 247);
+}
+
+.task-entry input{
+    height: 40px;
+    width: 40vw;
+    padding: 0px 10px 0px 10px;
+    border: 2px solid pink;
+}
+
+/* Button Css Start Here */
+
+.button {
+    width: 120px;
+    margin: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    border: 3px solid rgb(255, 239, 94);
+    background-color: rgb(255, 239, 94);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+  
+  .text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+  }
+  
+  .arrow path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-8px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+
+/* Button Css Ends Here */
+
+.task-display-main{
+  height: 300px;
+  /* border: 2px solid red; */
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+} 
+
+.individual-task{
+  height: 60px;
+  width: 95%;
+  /* border: 2px solid red; */
+  padding: 0px 10px 0px 10px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.individual-task h1{
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .individual-task{
+      height: 40px;
+      width: 85%;
+      padding: 0px 5px 0px 5px;
+  }
+
+  .individual-task h1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .button {
+    width: 70px;
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 239, 94);
+    background-color: rgb(255, 239, 94);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+  
+  .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+  }
+  
+  .arrow path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-8px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+}
